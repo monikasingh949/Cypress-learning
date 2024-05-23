@@ -1,0 +1,13 @@
+{
+  "name": "y",
+  "version": "y",
+  "main": "index.js",
+  "license": "MIT",
+  "devDependencies": {
+    "cypress": "^13.10.0"
+  },
+    "scripts": {
+      "cy:open": "cypress open"
+    }
+}
+

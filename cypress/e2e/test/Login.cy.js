@@ -28,9 +28,6 @@ describe("Login Functionality", () => {
   });
   it("should show validation errors for invalid email address", () => {
     login.AuthenticateUser("rrihef83861@godsigma", "passwordtestt");
-    // cy.get("#signInForm-email").type("rrihef83861@godsigma");
-    // cy.get("#signInForm-password").type("passwordtestt");
-    // cy.get('button[type="submit"]').click();
     cy.contains("The login was not successful.").should("be.visible");
   });
 });

@@ -1,7 +1,7 @@
 const { defineConfig } = require("cypress");
 
 module.exports = defineConfig({
-  e2e: {
+  test: {
     baseUrl: "https://www.woolworths.com.au/",
     chromeWebSecurity: false,
     setupNodeEvents(on, config) {
@@ -16,6 +16,12 @@ module.exports = defineConfig({
     env: {
       defaultUser: "test_user",
       defaultPassword: "test_password",
+    },
+  },
+
+  e2e: {
+    setupNodeEvents(on, config) {
+      // implement node event listeners here
     },
   },
 });

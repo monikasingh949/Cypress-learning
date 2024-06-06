@@ -24,3 +24,8 @@
 // -- This will overwrite an existing command --
 // Cypress.Commands.overwrite('visit', (originalFn, url, options) => { ... })
 require("cypress-xpath");
+// cypress/support/{scheme}.js, where {scheme} defaults to e2e
+const compareSnapshotCommand = require("cypress-image-diff-js/command");
+// for Cypress v12.17.3 and older
+//const compareSnapshotCommand = require("cypress-image-diff-js");
+compareSnapshotCommand();
